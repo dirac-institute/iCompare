@@ -21,7 +21,7 @@ Write a function which will take two series of ephemerides and compute the maxim
 
 _Milestone 2_
 
-Expand the work to OrbFit. Install OrbFit and learn how to run it on the command line. Write a Python wrapper that calls the OrbFit command-line code to integrate the same asteroid, as above. Compare it to JPL/Horizons output and see how well OrbFit is doing. 
+Expand the work to OrbFit. Install OrbFit and learn how to run it on the command line. Write a Python wrapper that calls the OrbFit command-line code to integrate the same asteroid, as above. Compare it to JPL/Horizons output and see how well OrbFit is doing. [DONE]
 
 _Milestone 3_
 
