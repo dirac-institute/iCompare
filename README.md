@@ -29,11 +29,11 @@ Extend the code so you can give it an arbitrary asteroid (not just 2019 OK). Run
 
 _Milestone 4_
 
-Write code which makes these runs automatically, and computes the maximum difference metric.
+Write code which makes these runs automatically, and computes the maximum difference metric. [half-done]
 
 _Milestone 5_
 
-Write visualization code to generate a red/yellow/green table, given some thresholds of what is considered acceptable.
+Write visualization code to generate a red/yellow/green table, given some thresholds of what is considered acceptable. [DONE]
 
 _Milestone 6_
 
