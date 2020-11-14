@@ -1,0 +1,52 @@
+ number of perturbers =           17
+ binary ephemerides file= AST17
+ perturbing asteroids used: 16 major perturbing asteroids plus Pluto
+ ngr_opt =  T
+ direct radiation pressure in the dynamical model =            0
+ direct radiation pressure coefficient =    0.0000000000000000     
+ Yarkovsky effect in the dynamical model =            3
+ A2 Yarkovsky parameter =    0.0000000000000000     
+ solve-for parameters selector (drpa2m, A2, or both) =            2
+ outgassing model =            0
+ A1 outgassing parameter =    0.0000000000000000     
+ A2 outgassing parameter =    0.0000000000000000     
+ A3 outgassing parameter =    0.0000000000000000     
+ delay outgassing parameter =    0.0000000000000000     
+ outgassing parameter to solve-for =            0
+ direct radiation pressure a-priori default value  F
+ Yarkovsky a-priori default value  F
+ first arc asteroid name default value= temp
+ not a designation default value  F
+ second arc asteroid name default value= 
+ error model file= fcct14
+ number of columns/directions =           50
+ number of rows/points in ray =           50
+ number of columns/directions in the densified grid =          100
+ number of rows/points in ray in the densified grid =          100
+ sigma max in cobweb =    5.0000000000000000     
+ max absolute magnitude =    34.500000000000000     
+ use b-plane as target plane default value  T
+ mass given in a separate file default value  F
+ limit eccentricity =    1.9999000000000000     
+ max semimajor axis =    2000.0000000000000     
+ min semimajor axis =   0.29999999999999999     
+ max aphelion =    4000.0000000000000     
+ min perihelion =    1.0000000000000000E-003
+ max perihelion default value    0.0000000000000000     
+ shrink of Earth cross section default value    1.0000000000000000     
+ use of constant steps in IP is  F
+ max dist. for inclolinctp =   0.20000000000000001     
+  INPUT OF OBSERVATIONAL DATA, ARC 1
+ first object obs. file name default value= temp
+ first object obs. directory name= mpcobs/
+  INPUT OF OBSERVATIONAL DATA, ARC 2
+ second object obs. file name default value= 
+  INPUT OF ORBITAL ELEMENTS, ARC 1
+ first arc asteroid name default value= temp
+ first arc elements file= epoch/temp.eq1
+ input orbit file correctly read
+ COM  0.74604277348843451       0.19121221329858201        5.8145960846904834E-002   3.5681448859980058        2.2065126539494293        55218.023111066781        55197.000000000000      T   19.699999999999999       0.25000000000000000                0         500
+  INPUT OF ORBITAL ELEMENTS, ARC 2
+  PREDICTION OF OBSERVATIONS
+  ARC 1
+  Initial epoch (MJD):  55197.0
