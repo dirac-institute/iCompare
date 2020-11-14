@@ -48,7 +48,7 @@ These are additional functionalities/ goals that may or may not be completed, de
 
 _Stretch 1_
 
-Enhance the generated reports based on how we like them. Expand the code to use ADAM and FindOrb, repeat the above. 
+Enhance the generated reports based on how we like them. Expand the code to use ADAM and FindOrb, repeat the above.
 
 _Stretch 2_
 
@@ -56,4 +56,4 @@ Make the reports be a fancy web-accessible dashboard.
 
 _Stretch 3_
 
-Finish DPS poster and/or complete a AAS research note. [Half-complete]
+Finish DPS poster and/or complete a AAS research note. [Half-complete- DPS poster presented]
