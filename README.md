@@ -1,5 +1,5 @@
 # great-integrator-bake-off
-## What a privilege and honour to be part of three months of research in a remote tent
+## What a privilege and honour to be part of many months of research in a remote tent
 
 ### Aims:
 There are 4-5 integrators that everyone uses in Solar System dynamics that have never been fully compared and tested:
