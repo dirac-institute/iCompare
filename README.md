@@ -29,7 +29,7 @@ Extend the code so you can give it an arbitrary asteroid (not just 2019 OK). Run
 
 _Milestone 4_
 
-Write code which makes these runs automatically, and computes the maximum difference metric. [Half-complete]
+Write code which makes these runs automatically, and computes the maximum difference metric. [DONE]
 
 _Milestone 5_
 
