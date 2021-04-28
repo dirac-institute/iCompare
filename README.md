@@ -1,4 +1,5 @@
 # iCompare
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/maria8ch/iCompare/HEAD?filepath=https%3A%2F%2Fgithub.com%2Fmaria8ch%2FiCompare%2Fblob%2Fmaster%2Fdemo_icompare.ipynb)
 
 ## Aims:
 There are 4-5 integrators that everyone uses in Solar System dynamics that have never been fully compared and tested:
@@ -27,5 +28,3 @@ More documentation will appear relative to completion rate.
 
 ## Requirements
 * installation of OpenOrb and OrbFit, see here for OpenOrb: https://github.com/oorb/oorb, and here for OrbFit: http://adams.dm.unipi.it/orbfit/
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/maria8ch/iCompare/HEAD?filepath=https%3A%2F%2Fgithub.com%2Fmaria8ch%2FiCompare%2Fblob%2Fmaster%2Fdemo_icompare.ipynb)
