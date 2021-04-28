@@ -121,8 +121,8 @@ def fopfile(tdir):
                 .rejopp=.false.    ! reject entire opposition
         '''))
         
-    shutil.copyfile("2019OK/AST17.bai", f"{tdir}/AST17.bai")
-    shutil.copyfile("2019OK/AST17.bep", f"{tdir}/AST17.bep")
+    shutil.copyfile("/astro/users/maria8ch/great-integrator-bake-off/orbfit/lib/AST17.bai", f"{tdir}/AST17.bai")
+    shutil.copyfile("/astro/users/maria8ch/great-integrator-bake-off/orbfit/lib/AST17.bep", f"{tdir}/AST17.bep")
 
     return
 
