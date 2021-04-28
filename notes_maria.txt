@@ -1,0 +1,38 @@
+table color-coding: https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html
+
+Keep sign separate from columns: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_fwf.html, https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html#csv-text-files
+
+OrbFit questions via email thread w/ Federica
+
+Gfortran version 4.8.6
+
+Useful bits from docs:
+
+JPL: 'targetname','datetime_jd','datetime_str','H','G','e','q','incl','Omega','w','Tp_jd','n','M','nu','a','Q','P'
+
+pyoorb:
+orbit id: an integer number to identify the orbit; usually ranges from 0 to n-1, where n is the number of orbits
+perihelion distance (au) for COM, semimajor axis a (au) for KEP, x (au) for CART
+eccentricity for COM or KEP, y (au) for CART
+inclination (deg) for COM or KEP, z (au) for CART
+longitude of the ascending node (deg) for COM and KEP, dx/dt (au/day) for CART
+argument of the periapsis (deg) for COM and KEP, dy/dt (au/day) for CARqT
+epoch of perihelion (modified Julian date) for COM, mean anomaly (deg) for KEP, dz/dt for CART
+orbital element type; integer value: CART: 1, COM: 2, KEP: 3
+epoch of the osculating elements (modified Julian date)
+timescale type of the epochs provided; integer value: UTC: 1, UT1: 2, TT: 3, TAI: 4
+absolute magnitude of the target
+photometric slope parameter of the target
+
+
+JPL TableColumns values to extract:
+[0,1,2,3,7,8,23] = [targetname, datetime str, datettime jd, H, RA, DEC, V]
+
+Want pyoorb.oorb_ephemeris_basic , use these indices for properties:
+[0,1,2,9] = [mjd, RA (deg), DEC(deg), predicted apparent V-band mag]
+
+example copied from--> https://github.com/oorb/oorb/tree/master/python#ephemeris-computation
+
+OrbFit bug: 9 60.00 for seconds is wrong
+
+18 May 2013 24.000 56430.999988    6 40  3.478  +24  9 60.00   8.6   6.7    7.933  -26.7  -41.1   58.2   8.4 190.0  2.5146  3.1868    1.0092   -0.0237    0.012"    0.010"  85.4
