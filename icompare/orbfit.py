@@ -191,7 +191,7 @@ def get_ephem_OrbFit(el_jpl, start, stop, obs):
         fopfile(tdir=tdir)
         astfile(start, stop, obs, tdir=tdir)
         home = os.environ["HOME"]
-        os.system(f'(cd "{tdir}" && {home}/great-integrator-bake-off/orbfit/src/fitobs/fitobs.x < ast.inp) > /dev/null') 
+        os.system(f'(cd "{tdir}" && {home}/bin/fitobs.x < ast.inp)') 
         df = pd.read_fwf(f'{tdir}/temp.eph', skiprows=4, header=None, colspecs=[(20,32),(35,37),(38,40),(41,47),(49,50),(50, 52),(53, 55),(56, 61),(62,67)])
 
     df["RA"] = Angle((df[1], df[2], df[3]), unit = 'hourangle').degree
