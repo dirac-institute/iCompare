@@ -1,5 +1,5 @@
 # iCompare
-[binder goes here]
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/maria8ch/iCompare/HEAD)
 ## Aims:
 There are 4-5 integrators that everyone uses in Solar System dynamics that have never been fully compared and tested:
 * OpenOrb
