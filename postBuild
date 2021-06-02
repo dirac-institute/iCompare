@@ -21,7 +21,7 @@ cp src/fitobs/fitobs.x ~/bin
 cd src/jpleph
 
 for fn in header.431_572 ascp00000.431 ascp01000.431 ascp02000.431 ascp03000.431; do
-    wget "ftp://ssd.jpl.nasa.gov/pub/eph/planets/ascii/de431/$fn"
+    wget "epyc.astro.washington.edu/~maria8ch/$fn"
 done
 
 PATH=".:$PATH" make ephemerides
