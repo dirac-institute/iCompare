@@ -18,13 +18,18 @@ mkdir -p ~/bin
 cp src/fitobs/fitobs.x ~/bin
 
 # now build the ephemerides
-cd src/jpleph
+cd lib
+wget https://epyc.astro.washington.edu/~maria8ch/jpleph
+wget https://epyc.astro.washington.edu/~maria8ch/AST17.bai
+wget https://epyc.astro.washington.edu/~maria8ch/AST17.bep
 
-for fn in header.431_572 ascp00000.431 ascp01000.431 ascp02000.431 ascp03000.431; do
-    wget "epyc.astro.washington.edu/~maria8ch/$fn"
-done
+#cd src/jpleph
 
-PATH=".:$PATH" make ephemerides
-cd ../../lib/
-ln -s ../src/jpleph/jpleph
+#for fn in header.431_572 ascp00000.431 ascp01000.431 ascp02000.431 ascp03000.431; do
+#    wget "epyc.astro.washington.edu/~maria8ch/$fn"
+#done
+
+#PATH=".:$PATH" make ephemerides
+#cd ../../lib/
+#ln -s ../src/jpleph/jpleph
 
