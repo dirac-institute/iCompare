@@ -156,6 +156,16 @@ default_asteroids = [('MBA','202930'), ('MBA', '110'), ('MBA', '887'), ('MBA', '
             ]
 
 def calc_all(asteroids=default_asteroids, start='2010-01-01T00:00:00', stop='2020-01-01T00:00:01', obs='I11'):
+    '''
+    Parameters
+    ----------
+    currently all are hardcoded, but override is possible to pick and choose any subset of asteroids
+    
+    Returns
+    -------
+    result: table?
+    
+    '''
     result = {}
     for kind, obj_id in asteroids:
         el_jpl, results = get_ephems(obj_id, start, stop, obs)

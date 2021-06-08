@@ -34,5 +34,8 @@ Want pyoorb.oorb_ephemeris_basic , use these indices for properties:
 example copied from--> https://github.com/oorb/oorb/tree/master/python#ephemeris-computation
 
 OrbFit bug: 9 60.00 for seconds is wrong
+OrbFit 60 arcsecond bug persists throughout lots of files
+OrbFit Covariance matrix effect/ workaround bug: using a dummy covariance that breaks on certain asteroids (Ceres etc) 
+
 
 18 May 2013 24.000 56430.999988    6 40  3.478  +24  9 60.00   8.6   6.7    7.933  -26.7  -41.1   58.2   8.4 190.0  2.5146  3.1868    1.0092   -0.0237    0.012"    0.010"  85.4
