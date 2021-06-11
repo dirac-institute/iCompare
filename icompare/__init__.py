@@ -159,13 +159,22 @@ def calc_all(asteroids=default_asteroids, start='2010-01-01T00:00:00', stop='202
     '''
     Parameters
     ----------
-    currently all are hardcoded, but override is possible to pick and choose any subset of asteroids
+    *currently all are hardcoded, but override is possible to pick and choose any subset of asteroids*
+    asteroids: `str`, `tuple` (N, 2)
+        Tuple list of type and asteroid id, both in string format
+    start: `str`
+        Start time of integration epoch, ISOT
+    stop: `str`
+        End time of integration epoch, ISOT
+    obs: `str`
+        Observatory code
     
     Returns
     -------
-    result: table?
-    
+    result: `dict` (N, size(integ_functions))
+        median, mean, max for every value in ephemerides in comparison to JPL ephem outputs.
     '''
+    
     result = {}
     for kind, obj_id in asteroids:
         el_jpl, results = get_ephems(obj_id, start, stop, obs)
@@ -173,3 +182,22 @@ def calc_all(asteroids=default_asteroids, start='2010-01-01T00:00:00', stop='202
         stats = table_stats(rsep)
         result[(kind, obj_id)] = stats
     return result
+
+def plot(data, cmap):
+    '''
+    Parameters
+    ----------
+    data: `dict`
+        Dictionary with data that you would like to plot up via the provided colourmaps
+    cmap: `str`
+        Specifies which colour map to use, default or red/green colourblind friendly. Possible arguments: 'default', 'rg_freindly'
+    Returns
+    -------
+    pandas.DataFrame() object
+        Pandas Data Frame object with colouration
+    '''
+    if cmap=='default':
+         display(pd.DataFrame(data).T.style.apply(default_map))
+    elif cmap=='rg_friendly':
+        display(pd.DataFrame(data).T.style.apply(rg_friendly_map))
+    return
