@@ -5,7 +5,8 @@ channels:
 dependencies:
   - pandas
   - astroquery
+  - jinja2
   - openorb
     
-prefix: /astro/users/maria8ch/.conda/envs/bakeoff3
+prefix: /astro/users/maria8ch/.conda/envs/bakeoff4
 
