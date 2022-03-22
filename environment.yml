@@ -1,10 +1,10 @@
-name: bakeoff3
+name: bakeoff4
 channels:
   - conda-forge
   - defaults
 dependencies:
   - pandas
-  - astroquery=0.4.1
+  - astroquery
   - openorb
     
 prefix: /astro/users/maria8ch/.conda/envs/bakeoff3
