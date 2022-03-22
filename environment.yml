@@ -4,7 +4,7 @@ channels:
   - defaults
 dependencies:
   - pandas
-  - astroquery
+  - astroquery=0.4.1
   - openorb
     
 prefix: /astro/users/maria8ch/.conda/envs/bakeoff3
